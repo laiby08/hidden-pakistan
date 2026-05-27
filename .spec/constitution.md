@@ -1,21 +1,39 @@
-# Explore Pakistan - Constitution
+# Hidden Pakistan - Constitution
 
 ## Mission
-Provide users with beautiful travel information about Pakistan.
+
+To develop an AI-powered tourism platform for Pakistan using modern web technologies and Retrieval-Augmented Generation (RAG) architecture.
 
 ## Core Principles
-1. Responsive Design
-2. Clean UI
-3. Fast Performance
-4. Easy Navigation
-5. Mobile Friendly
+
+1. Clean and maintainable code
+2. Responsive mobile-first design
+3. AI-assisted tourism experience
+4. Fast performance
+5. Component-based architecture
 
 ## Technical Standards
+
+- Next.js App Router
 - TypeScript
 - Tailwind CSS
-- Next.js 14
+- FastAPI backend
+- RAG architecture
+- API-based communication
 
 ## Design Guidelines
-- Simple colors
+
 - Consistent spacing
-- Responsive layout
+- Responsive UI
+- Accessible design
+- User-friendly navigation
+- Modern component styling
+
+## Development Rules
+
+- All API responses must be handled using error handling (try/catch)
+- No hardcoded AI responses should be used in production
+- Frontend must validate user input before sending request
+- Backend must return consistent JSON format
+- Code should be modular and reusable
+- UI components must remain responsive on all screen sizes

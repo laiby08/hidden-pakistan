@@ -10,29 +10,34 @@ export default function DestinationCard({
   description,
 }: Props) {
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-      
+    <div
+      className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-2"
+    >
+
       <img
         src={image}
         alt={title}
-        className="h-56 w-full object-cover"
+        className="h-64 w-full object-cover"
       />
 
-      <div className="p-5">
+      <div className="p-6">
 
-        <h2 className="text-2xl font-bold mb-2">
+        <h2 className="text-3xl font-bold mb-3">
           {title}
         </h2>
 
-        <p className="text-gray-600 mb-4">
+        <p className="text-gray-600 mb-5 leading-7">
           {description}
         </p>
 
-        <button className="bg-black text-white px-4 py-2 rounded-lg">
-          Explore
+        <button
+          className="bg-black hover:bg-green-500 transition text-white px-5 py-3 rounded-lg"
+        >
+          Explore More
         </button>
 
       </div>
+
     </div>
   )
 }

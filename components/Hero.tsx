@@ -1,27 +1,39 @@
 export default function Hero() {
   return (
-    <section className="h-screen bg-cover bg-center flex items-center justify-center text-white"
+    <section
+      className="h-screen bg-cover bg-center relative"
       style={{
         backgroundImage:
           "url('https://images.unsplash.com/photo-1605640840605-14ac1855827b')",
       }}
     >
 
-      <div className="text-center bg-black/50 p-10 rounded-xl">
-        
-        <h1 className="text-6xl font-bold mb-4">
-          Discover Hidden Pakistan
-        </h1>
+      <div className="absolute inset-0 bg-black/60" />
 
-        <p className="text-xl mb-6">
-          Explore the unseen beauty of Pakistan
-        </p>
+      <div className="relative z-10 flex items-center justify-center h-full">
 
-        <button className="bg-green-500 px-6 py-3 rounded-lg hover:bg-green-600">
-          Explore Now
-        </button>
+        <div className="text-center text-white px-6">
+
+          <h1 className="text-6xl md:text-7xl font-extrabold mb-6 leading-tight">
+            Discover Hidden <br />
+            Beauty of Pakistan
+          </h1>
+
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+            Explore mountains, lakes, valleys, deserts,
+            and hidden gems across Pakistan.
+          </p>
+
+        <a         
+        href="/destinations"         
+        className="bg-green-500 hover:bg-green-600 transition px-8 py-4 rounded-full text-lg font-semibold shadow-lg inline-block" 
+        >         
+        Explore Destinations         
+        </a>
+        </div>
 
       </div>
+
     </section>
   )
 }
