@@ -298,15 +298,13 @@ https://youtu.be/lR3ua9HVvhU?si=MMWi6TbtoC_tadGE
 # Deployment Link
 
 Live Website:
-(Add deployed website URL here)
-
+https://hidden-pakistan.vercel.app/
 ---
 
 # GitHub Repository
 
 Repository URL:
-(Add GitHub repository link here)
-
+https://github.com/laiby08/hidden-pakistan
 ---
 
 # Spec-Kit Documentation
