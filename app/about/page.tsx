@@ -3,11 +3,11 @@ import Footer from "@/components/Footer"
 
 export default function AboutPage() {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
 
       <Navbar />
 
-<section className="max-w-5xl mx-auto py-20 px-6">
+      <section className="flex-1 max-w-5xl mx-auto py-20 px-6">
 
         <h1 className="text-6xl font-bold mb-8">
           About Hidden Pakistan

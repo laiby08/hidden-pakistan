@@ -8,36 +8,40 @@ import { destinations } from "@/data/destinations"
 
 export default function Home() {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
 
       <Navbar />
 
-      <Hero />
+      <div className="flex-1">
 
-      <section className="bg-gray-100 py-24 px-6">
+        <Hero />
 
-        <div className="max-w-7xl mx-auto">
+        <section className="bg-gray-100 py-24 px-6">
 
-          <h2 className="text-5xl font-extrabold mb-14 text-center">
-            Featured Destinations
-          </h2>
+          <div className="max-w-7xl mx-auto">
 
-          <div className="grid md:grid-cols-3 gap-8">
+            <h2 className="text-5xl font-extrabold mb-14 text-center">
+              Featured Destinations
+            </h2>
 
-            {destinations.map((place, index) => (
-              <DestinationCard
-                key={index}
-                title={place.title}
-                image={place.image}
-                description={place.description}
-              />
-            ))}
+            <div className="grid md:grid-cols-3 gap-8">
+
+              {destinations.map((place, index) => (
+                <DestinationCard
+                  key={index}
+                  title={place.title}
+                  image={place.image}
+                  description={place.description}
+                />
+              ))}
+
+            </div>
 
           </div>
 
-        </div>
+        </section>
 
-      </section>
+      </div>
 
       <ChatWidget />
 
